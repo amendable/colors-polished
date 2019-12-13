@@ -48,6 +48,12 @@ test('returns correct blue transparentize40 color', () => {
   });
 })
 
+test('returns correct blue transparentize40-darken20 color', () => {
+  expect(resolver.resolve({ key: 'color', value: 'blue-transparentize40-darken20' })).toEqual({
+    color: 'rgba(22,70,102,0.6)',
+  });
+})
+
 test('returns correct blue opacify30 color', () => {
   expect(resolver.resolve({ key: 'color', value: 'blue-opacify30' })).toEqual({
     color: '#2980b9',
