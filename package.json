@@ -1,0 +1,37 @@
+{
+  "name": "@amendable/colors-polished",
+  "version": "0.1.0",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist/commonjs",
+    "dist/esm"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/amendable/colors-polished",
+  "bugs": {
+    "url": "https://github.com/amendable/colors-polished/issues"
+  },
+  "repository": "amendable/colors-polished",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3"
+  },
+  "scripts": {
+    "build": "yarn build-esm && yarn build-commonjs",
+    "watch": "BABEL_ENV=commonjs babel src --out-dir dist/commonjs --config-file ./babel.config.js -w",
+    "build-commonjs": "NODE_ENV=production BABEL_ENV=commonjs babel src --out-dir dist/commonjs --config-file ./babel.config.js",
+    "build-esm": "NODE_ENV=production BABEL_ENV=esm babel src --out-dir dist/esm --config-file ./babel.config.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@amendable/colors": "^0.0.7",
+    "jest": "^24.9.0",
+    "polished": "^3.4.2"
+  }
+}
