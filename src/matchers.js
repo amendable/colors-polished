@@ -1,4 +1,4 @@
-import { darken, lighten, invert } from 'polished';
+import { darken, lighten, invert, transparentize, opacify } from 'polished';
 
 const toPercent = (val) => parseInt(val, 10) / 100;
 
@@ -14,5 +14,13 @@ export default [
   {
     regex: 'invert',
     resolve: ({ value, matches }) => invert(value),
+  },
+  {
+    regex: 'transparentize(\\d+)',
+    resolve: ({ value, matches }) => transparentize(toPercent(matches[1]), value),
+  },
+  {
+    regex: 'opacify(\\d+)',
+    resolve: ({ value, matches }) => opacify(toPercent(matches[1]), value),
   },
 ]
