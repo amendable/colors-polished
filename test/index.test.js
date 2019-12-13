@@ -30,6 +30,18 @@ test('returns correct blue darken10 color', () => {
   });
 })
 
+test('returns correct blue invert color', () => {
+  expect(resolver.resolve({ key: 'color', value: 'blue-invert' })).toEqual({
+    color: '#d67f46',
+  });
+})
+
+test('returns correct blue lighten20 color', () => {
+  expect(resolver.resolve({ key: 'color', value: 'blue-lighten20' })).toEqual({
+    color: '#6ab0de',
+  });
+})
+
 test('returns correct blue darken10 invert color', () => {
   expect(resolver.resolve({ key: 'color', value: 'blue-darken10-invert' })).toEqual({
     color: '#df9c70',
