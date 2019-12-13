@@ -1,4 +1,4 @@
-import { darken, ligthen, invert } from 'polished';
+import { darken, lighten, invert } from 'polished';
 
 const toPercent = (val) => parseInt(val, 10) / 100;
 
