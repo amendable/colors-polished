@@ -4,6 +4,8 @@ This is a drop-in replacement of [@amendable/colors](https://github.com/amendabl
 
 ## Usage
 
+All polished values that go from 0 to 1 in this resolver syntax goes from 0 to 100. So if you want to transform with `darken(0.5, 'red')` you have to write `red-darken50`.
+
 ```jsx sandbox
 import { render } from 'react-dom'
 import Box, { AmendableProvider } from '@amendable/core'
