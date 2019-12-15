@@ -15,10 +15,11 @@
   "devDependencies": {
     "@babel/preset-env": "^7.7.6",
     "@babel/preset-react": "^7.7.4",
-    "microbundle": "^0.11.0"
+    "microbundle": "^0.11.0",
+    "rimraf": "^3.0.0"
   },
   "scripts": {
-    "build": "microbundle build --no-compress --name amendableColorsPolished",
+    "build": "rimraf build && microbundle build --no-compress --name amendableColorsPolished",
     "watch": "microbundle watch --no-compress",
     "test": "jest"
   },
