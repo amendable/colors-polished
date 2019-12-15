@@ -14,7 +14,8 @@
   "repository": "amendable/colors-polished",
   "devDependencies": {
     "@babel/preset-env": "^7.7.6",
-    "@babel/preset-react": "^7.7.4"
+    "@babel/preset-react": "^7.7.4",
+    "microbundle": "^0.11.0"
   },
   "scripts": {
     "build": "microbundle build --no-compress --name amendableColorsPolished",
@@ -24,7 +25,6 @@
   "dependencies": {
     "@amendable/colors": "^0.0.7",
     "jest": "^24.9.0",
-    "microbundle": "^0.11.0",
     "polished": "^3.4.2"
   }
 }
