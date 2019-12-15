@@ -1,6 +1,6 @@
 {
   "name": "@amendable/colors-polished",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "files": [
@@ -12,6 +12,10 @@
     "url": "https://github.com/amendable/colors-polished/issues"
   },
   "repository": "amendable/colors-polished",
+  "contributors": [
+    { "name": "Domas Bitvinskas", "email": "domas.bitvinskas@me.com", "url": "https://domasbitvinskas.com" },
+    { "name": "Justas Palumickas", "email": "jpalumickas@gmail.com", "url": "https://jpalumickas.com" }
+  ],
   "devDependencies": {
     "@babel/preset-env": "^7.7.6",
     "@babel/preset-react": "^7.7.4",
