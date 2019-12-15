@@ -7,4 +7,4 @@ export default ({ colors = {}, match = defaultMatch }) => ({
   resolve: ({ key, value }) => ({
     [key]: resolveValue({ value, colors }) || resolveColor({ colors, value }),
   }),
-})
+});

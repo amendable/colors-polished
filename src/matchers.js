@@ -5,7 +5,7 @@ const toPercent = (val) => parseInt(val, 10) / 100;
 export default [
   {
     regex: 'darken(\\d+)',
-    resolve: ({ value, matches }) =>  darken(toPercent(matches[1]), value),
+    resolve: ({ value, matches }) => darken(toPercent(matches[1]), value),
   },
   {
     regex: 'lighten(\\d+)',
@@ -17,10 +17,11 @@ export default [
   },
   {
     regex: 'transparentize(\\d+)',
-    resolve: ({ value, matches }) => transparentize(toPercent(matches[1]), value),
+    resolve: ({ value, matches }) =>
+      transparentize(toPercent(matches[1]), value),
   },
   {
     regex: 'opacify(\\d+)',
     resolve: ({ value, matches }) => opacify(toPercent(matches[1]), value),
   },
-]
+];
