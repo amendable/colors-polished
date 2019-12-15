@@ -23,7 +23,7 @@
     "rimraf": "^3.0.0"
   },
   "scripts": {
-    "build": "rimraf build && microbundle build --no-compress --name amendableColorsPolished",
+    "build": "rimraf dist && microbundle build --no-compress --name amendableColorsPolished",
     "watch": "microbundle watch --no-compress",
     "test": "jest"
   },
