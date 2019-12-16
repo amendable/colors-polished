@@ -1,4 +1,4 @@
-# Polished Colors
+# Colors Polished
 
 This is a drop-in replacement of [@amendable/colors](https://github.com/amendable/colors) that also adds support for [polished](https://polished.js.org) color transforms. You can now write `primary-darken10` and it will just work.
 
@@ -35,7 +35,7 @@ render(
 
 The same props that [@amendable/colors](https://github.com/amendable/colors#supported-props) support.
 
-## Supported [polished](https://polished.js.org) color transforms
+## Supported Polished color transforms
 
 - [`adjust-hue`](https://polished.js.org/docs/#adjusthue)
 - [`complement`](https://polished.js.org/docs/#complement)
