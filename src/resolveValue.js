@@ -8,6 +8,8 @@ const fullRegex = new RegExp(
 );
 
 const resolveValue = ({ value, colors }) => {
+  if (!value) return;
+
   const resolverMatches = value.match(fullRegex);
   if (!resolverMatches) {
     return resolveColor({ colors, value });
