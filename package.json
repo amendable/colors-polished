@@ -26,22 +26,21 @@
   ],
   "dependencies": {
     "@amendable/colors": "^0.0.7",
-    "polished": "^3.4.2"
+    "polished": "^3.4.4"
   },
   "devDependencies": {
     "@amendable/prettier-config": "^1.0.0",
-    "@babel/preset-env": "^7.7.6",
-    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "jest": "^25.1.0",
     "microbundle": "^0.11.0",
     "prettier": "^1.19.1",
-    "rimraf": "^3.0.0",
-    "jest": "^24.9.0"
+    "rimraf": "^3.0.1"
   },
   "scripts": {
     "build": "rimraf dist && microbundle build --no-compress --name amendableColorsPolished",
     "watch": "microbundle watch --no-compress",
     "test": "jest"
   },
-
   "prettier": "@amendable/prettier-config"
 }
