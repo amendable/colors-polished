@@ -2,7 +2,7 @@ import { darken, lighten, invert, transparentize, opacify } from 'polished';
 
 const toPercent = (val) => parseInt(val, 10) / 100;
 
-export default [
+const matchers = [
   {
     regex: 'darken(\\d+)',
     resolve: ({ value, matches }) => darken(toPercent(matches[1]), value),
@@ -25,3 +25,5 @@ export default [
     resolve: ({ value, matches }) => opacify(toPercent(matches[1]), value),
   },
 ];
+
+export default matchers;

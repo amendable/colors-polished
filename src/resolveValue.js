@@ -2,9 +2,7 @@ import resolveColor from './resolveColor';
 import matchers from './matchers';
 
 const fullRegex = new RegExp(
-  `(.+?)(${matchers
-    .map((matcher) => `(\-${matcher.regex})`)
-    .join('|')})(.*)`
+  `(.+?)(${matchers.map((matcher) => `(\-${matcher.regex})`).join('|')})(.*)`
 );
 
 const resolveValue = ({ value, colors }) => {
@@ -17,7 +15,7 @@ const resolveValue = ({ value, colors }) => {
 
   const color = resolveColor({ colors, value: resolverMatches[1] });
   const pattern = resolverMatches[2];
-  const rest = resolverMatches[resolverMatches.length - 1]
+  const rest = resolverMatches[resolverMatches.length - 1];
 
   let returnColor;
   matchers.forEach((matcher) => {
